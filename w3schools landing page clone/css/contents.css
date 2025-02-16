@@ -1,0 +1,574 @@
+/* contents css */
+#contents{
+    width: 100%;
+    padding-top: 90px;
+}
+
+/* learn to code part */
+#contents .learn-to-code{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282A35;
+}
+#contents .learn-to-code .learn-to-code-inside-box{
+    margin-bottom: 9vh;
+    height: 35vh;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#contents .learn-to-code .learn-to-code-inside-box a{
+    color: #ffff;
+    font-size: 23px;
+    font-weight: 700;
+}
+#contents .learn-to-code .learn-to-code-inside-box a:hover{
+    color: #fff4a3;
+}
+#contents .learn-to-code .learn-to-code-inside-box .learn-to-code-input-search{
+    height: 47px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #04aa6d;
+}
+#contents .learn-to-code .learn-to-code-inside-box .learn-to-code-input-search:hover{
+    background-color: #059862;
+}
+#contents .learn-to-code .learn-to-code-inside-box .learn-to-code-input-search .material-symbols-outlined{
+    margin: auto;
+    height: 18px;
+    width: 16px;
+    color: #ffff;
+    padding: 0% 9% 4% 0%;
+    font-weight: 700;
+    cursor: pointer;
+}
+#contents .learn-to-code .learn-to-code-inside-box .learn-to-code-input-search input{
+    height: 100%;
+    width: 400px;
+    outline: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 25px;
+    margin-right: auto;
+}
+#contents .learn-to-code .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+#contents .learn-to-code .wave svg {
+    position: relative;
+    display: block;
+    width: calc(162% + 1.3px);
+    height: 72px;
+    transform: rotateY(180deg);
+}
+
+#contents .learn-to-code .wave .shape-fill {
+    fill: #D9EEE1;
+}
+
+/* langs: similar things like first box(lang-name) and buttons inside it */
+.langs{
+    height: 68vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.langs .langs-middle-placer{
+    height: 510px;
+    width: 980px;
+    display: flex;
+    align-items: center;
+}
+.langs .langs-middle-placer .langs-name{
+    height: 450px;
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.langs-buttons{
+    height: 43px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.button-1{
+    color: #ffff;
+    background-color: #04aa6d;
+}
+.button-1:hover {
+    background-color: #059862;
+}
+.button-2{
+    background-color: #fff4a3;
+}
+.button-2:hover{
+    background-color: #fff080;
+}
+.button-3{
+    color: #ffff;
+    background-color: #282A35;
+}
+.button-3:hover{
+    background-color: #000;
+}
+.button-4{
+    background-color: #ffc0c7;
+}
+.button-4:hover{
+    background-color: #ffb3bb;
+}
+.button-5{
+    background-color: white;
+}
+.button-5:hover{
+    background-color: #E7E9EB;
+}
+
+/* langs: similar things like second box(langs-demo) and buttons inside it */
+.langs .langs-middle-placer .langs-demo{
+    height: 510px;
+    width: 490px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.langs .langs-middle-placer .langs-demo .langs-demo-container{
+    height: 453px;
+    width: 432px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 16px;
+    background-color: var(--web-templates-bg-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.langs .langs-middle-placer .langs-demo .langs-demo-container .langs-demo-container-inner-box{
+    height: 300px;
+    width: 400px;
+    padding: 8px 12px;
+    line-height: 23px;
+    border-left: 4px solid #04AA6D;
+    background-color: var(--demo-text-editor-inside-bg);
+    
+}
+
+/* extra-langs part css */
+#contents .extra-langs{
+    height: 1050px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-purple-bg-color);
+}
+#contents .extra-langs .extra-langs-container {
+    height: 935px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#contents .extra-langs .extra-langs-container .extra-langs-container-c1{
+    height: 265px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid green;
+}
+
+/* ----------------grid-more-langs--------------------------- */
+#contents .grid-more-langs{
+    height: 2200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-purple-bg-color);
+}
+#contents .grid-more-langs .grid-more-langs-container{
+    height: 2100px;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 50px;
+}
+#contents .grid-more-langs .grid-more-langs-container .large-grid-box-right{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#contents .grid-more-langs .grid-more-langs-container .large-grid-box-left{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.large-grid-box-left, .large-grid-box-right, .small-grid-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+#contents .grid-more-langs .grid-more-langs-container > div:nth-child(5n+1){
+    background-color: #ffc0c7;
+}
+#contents .grid-more-langs .grid-more-langs-container > div:nth-child(5n+2){
+    background-color: #fff4a3;
+}
+#contents .grid-more-langs .grid-more-langs-container > div:nth-child(5n+3){
+    background-color: #f3ecea;
+}
+#contents .grid-more-langs .grid-more-langs-container > div:nth-child(5n+4){
+    background-color: #d9eee1;
+}
+#contents .grid-more-langs .grid-more-langs-container > div:nth-child(5n+5){
+    background-color: #96d4d4;
+}
+.large-grid-box-left:hover, .large-grid-box-right:hover, .small-grid-box:hover{
+    opacity: 1;
+}
+
+/*---------------- code-editor css ----------------*/
+#contents .code-editor{
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-purple-bg-color);
+}
+#contents .code-editor .code-editor-container{
+    height: 680px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*---------------- w3chools-spaces css ----------------*/
+#contents .w3chools-spaces{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--dark-purple-bg-color);
+}
+
+/*---------------- my learning css ----------------*/
+#contents .my-learning{
+    height: 635px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d9eee1;
+}
+#contents .my-learning .my-learning-container{
+    height: 410px;
+    width: 940px;
+    display: flex;
+}
+#contents .my-learning .my-learning-container .my-learning-container-text{
+    height: 320px;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*-------------------------- plus-user css --------------------------*/
+#contents .plus-user{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--dark-purple-bg-color);
+}
+#contents .plus-user .plus-user-inside-container{
+    height: 175px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*-------------------------- color-picker css --------------------------*/
+#contents .color-picker{
+    height: 460px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #f3ecea;
+}
+#contents .color-picker img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/*-------------------------- for-teachers css --------------------------*/
+#contents .for-teachers{
+    height: 580px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-purple-bg-color);
+}
+#contents .for-teachers .for-teachers-text-conatiner{
+    height: 510px;
+    width: 490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#contents .for-teachers .for-teachers-text-conatiner .plus-user-text-conatiner-inside{
+    height: 210px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*-------------------------- Code Game css ---------------------*/
+#contents .code-game{
+    height: 590px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #96d4d4;
+}
+#contents .code-game img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*----------------------------------- exercise and quiz css ------------------- */
+#contents .exercise-quiz{
+    height: 560px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--dark-purple-bg-color);
+}
+#contents .exercise-quiz .exercise-quiz-inner-container{
+    height: 200px;
+    width: 1250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*----------------------------------- Web Templates css ------------------------------------- */
+#contents .web-templates{
+    height: 815px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--web-templates-bg-color);
+}
+
+/*-------------------------------kick start your career css ---------------------------------- */
+#contents .career{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 200px;
+    gap: 60px;
+    background-color: var(--dark-purple-bg-color);
+}
+
+/*------------------------------- how-to css ---------------------------------- */
+#contents .how-to{
+    height: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: var(--how-to-bg-color);
+}
+#contents .how-to .monitor-setup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contents .how-to .monitor-setup .monitor{
+    height: 450px;
+    width: 1020px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+#contents .how-to .monitor-setup .monitor .url-part{
+    height: 45px;
+    width: 1000px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#contents .how-to .monitor-setup .monitor .url-part .mac-circles{
+    height: max-content;
+    width: max-content;
+    box-sizing: content-box;
+    padding: 15px;
+}
+#contents .how-to .monitor-setup .monitor .url-part .mac-circles .circle{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+#contents .how-to .monitor-setup .monitor .url-part .actual-url{
+    height: max-content;
+    width: 550px;
+    padding: 4px 0px 4px 20px;
+    box-sizing: content-box;
+    margin: auto;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+#contents .how-to .monitor-setup .monitor .screen{
+    height: 350px;
+    width: 1000px;
+    position: relative;
+}
+#contents .how-to .monitor-setup .monitor .screen .slider{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    height: 55px;
+    width: 40px;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    z-index: 100000000000;
+}
+#contents .how-to .monitor-setup .monitor .screen .screen-img{
+    height: 350px;
+    width: 1000px;
+    position: relative;
+    animation: screenImage 1.5s;
+}
+@keyframes screenImage {
+    0%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#contents .how-to .monitor-setup .monitor .screen .slider:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.sleft{
+    left: 0;
+}
+.sright{
+    right: 0;
+}
+#contents .how-to .monitor-setup .monitor .screen .screen-img .caption{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+}
+#contents .how-to .monitor-setup .monitor .circle-sliders{
+    height: max-content;
+    width: max-content;
+    box-sizing: content-box;
+    padding:  5px 20px;
+}
+#contents .how-to .monitor-setup .monitor .circle-sliders .sc{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+    background-color: #bbbbbb;
+    border-radius: 50%;
+}
+#contents .how-to .monitor-setup .monitor .circle-sliders .active, #contents .how-to .monitor-setup .monitor .circle-sliders .sc:hover{
+    background-color: #717171;
+}
+#contents .how-to .monitor-setup .stand{
+    height: 80px;
+    width: 50px;
+    background-color: var(--how-to-stand-button-color);
+}
+#contents .how-to .monitor-setup .learn-button{
+    height: 62px;
+    width: 465px;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--how-to-stand-button-color);
+}
+#contents .how-to .monitor-setup .learn-button:hover{
+    background-color: #04AA6D;
+}

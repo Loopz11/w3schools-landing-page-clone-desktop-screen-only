@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W3school landing page clone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/contents.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <nav><!-------------------------- nav section ---------------------------->
+        <div class="upper-nav">
+            <div class="upper-left-nav">
+                <a href="#" class="w3-logo" style="padding: 8px 16px;cursor: pointer;">
+                    <img src="resources/w3_logo.png" alt="w3 schools logo" height="55px" width="50px">
+                    <!-- w3schools logo credit : https://uxwing.com/w3schools-logo-icon/ -->
+                </a>
+                <span class="upper-left-nav-childs">Tutorials▼</span>
+                <span class="upper-left-nav-childs">Exercises▼</span>
+                <span class="upper-left-nav-childs">Certificates▼</span>
+                <span class="upper-left-nav-childs">Services▼</span>
+                <div class="input-box">
+                    <input type="text" placeholder="Search...">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+                <div class="light-night-mode">
+                    <div class="image-holder light">
+                        <img src="resources/dark-mode.png" alt="light-dark mode" class="light-dark" height="18px" width="18px">
+                        <!-- dark mode image credit : https://www.flaticon.com/free-icon/night-mode_12377255?term=light+dark&page=1&position=2&origin=tag&related_id=12377255 -->
+                        <!-- light mode image credit : https://www.flaticon.com/free-icon/contrast_17682109?related_id=17682109 -->
+                    </div> 
+                </div>
+            </div>
+            <div class="upper-right-nav">
+                <span class="upper-right-nav-childs light">
+                    <svg height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="stroke: #9763f6;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                    </svg>
+                    Plus
+                </span>
+                <span class="upper-right-nav-childs light">
+                    <svg height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="stroke: #9763f6;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
+                    Spaces                      
+                </span>
+                <span class="upper-right-nav-childs light">
+                    <svg height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="stroke: #9763f6;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                    </svg>
+                    For Teachers                      
+                </span>
+                <span class="upper-right-nav-childs light">
+                    <svg height="18px" width="18px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6" style="stroke: #9763f6;">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    Get Certified                      
+                </span>
+                <span class="login-signup">
+                    <span class="login-signup-container">
+                        <span class="sign-up">Sign Up</span>
+                        <p class="log-in">Log in</p>
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div class="lower-nav">
+            <button class="left pointer">&lt;</button>
+            <button class="right pointer">&gt;</button>
+            <div class="language-list">
+                <div><p>HTML</p></div>
+                <div><p>CSS</p></div>
+                <div><p>JAVASCRIPT</p></div>
+                <div><p>SQL</p></div>
+                <div><p>PYTHON</p></div>
+                <div><p>JAVA</p></div>
+                <div><p>PHP</p></div>
+                <div><p>HOW TO</p></div>
+                <div><p>W3.CSS</p></div>
+                <div><p>C</p></div>
+                <div><p>C++</p></div>
+                <div><p>C#</p></div>
+                <div><p>BOOTSTRAP</p></div>
+                <div><p>REACT</p></div>
+                <div><p>MYSQL</p></div>
+                <div><p>JQUERY</p></div>
+                <div><p>EXCEL</p></div>
+                <div><p>XML</p></div>
+                <div><p>DJANGO</p></div>
+                <div><p>NUMPY</p></div>
+                <div><p>PANDAS</p></div>
+                <div><p>NODEJS</p></div>
+                <div><p>DSA</p></div>
+                <div><p>TYPESCRIPT</p></div>
+                <div><p>ANGULAR</p></div>
+                <div><p>GIT</p></div>
+                <div><p>POSTGRESQL</p></div>
+                <div><p>MONGODB</p></div>
+                <div><p>ASP</p></div>
+                <div><p>AI</p></div>
+                <div><p>R</p></div>
+                <div><p>GO</p></div>
+                <div><p>KOTLIN</p></div>
+                <div><p>SASS</p></div>
+                <div><p>VUE</p></div>
+                <div><p>GEN AI</p></div>
+                <div><p>SCIPY</p></div>
+                <div><p>CYBERSECURITY</p></div>
+                <div><p>DATASCIENCE</p></div>
+            </div>
+        </div>
+    </nav>
+    <section id="contents"><!-------------------------- contents section ---------------------------->
+        <div class="learn-to-code"><!-------------------------- Learn to code section ---------------------------->
+            <div class="learn-to-code-inside-box">
+                <p style="color: #ffff;font-size: 70px;font-weight: 700;">Learn to Code</p>
+                <p style="color: #fff4a3;font-size: 23px;font-weight: 700;">With the world's largest web developer site.</p>
+                <div class="learn-to-code-input-search">
+                    <input type="text" placeholder="Search out tutorials, e.g. HTML">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </div>
+                <a href="#" onclick="event.preventDefault();">Not Sure Where To Begin?</a>
+            </div>
+            <div class="wave">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="langs" style="background-color: #D9EEE1;"><!---------------- Html part ----------------->
+            <div class="langs-middle-placer">
+                <div class="langs-name">
+                    <h1 style="font-size: 65px;font-weight: 700;height: 80px;">HTML</h1>
+                    <p style="font: 19px;font-weight: 700;height: 29px;">The language for building web pages</p>
+                    <button class="button-1 langs-buttons">Learn HTML</button>
+                    <button class="button-2 langs-buttons">Video Tutorial</button>
+                    <button class="button-3 langs-buttons">HTML Reference</button>
+                    <button class="button-4 langs-buttons">Get Certified</button>
+                </div>
+                <div class="langs-demo">
+                    <div class="langs-demo-container">
+                        <h3 style="color: var(--black-text-to-white);">HTML Example:</h3>
+                        <div class="langs-demo-container-inner-box" style="color: var(--black-text-to-white);">
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                            &lt;head&gt; <br>
+                            &lt;title&gt;HTML Tutorial&lt;/title&gt; <br>
+                            &lt;/head&gt; <br>
+                            &lt;body&gt; <br>
+                            <br>
+                            &lt;h1&gt;This is a heading&lt;/h1&gt; <br>
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
+                            <br>
+                            &lt;/body&gt; <br>
+                            &lt;/html&gt;                                
+                        </div>
+                        <button class="button-1 langs-buttons">Try it Yourself</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="langs" style="background-color: #fff4A3;"><!---------------- CSS part ----------------->
+            <div class="langs-middle-placer">
+                <div class="langs-name">
+                    <h1 style="font-size: 65px;font-weight: 700;height: 80px;">CSS</h1>
+                    <p style="font: 19px;font-weight: 700;height: 29px;">The language for styling web pages</p>
+                    <button class="button-1 langs-buttons">Learn CSS</button>
+                    <button class="button-3 langs-buttons">CSS Reference</button>
+                    <button class="button-4 langs-buttons">Get Certified</button>
+                </div>
+                <div class="langs-demo">
+                    <div class="langs-demo-container">
+                        <h3 style="color: var(--black-text-to-white);">CSS Example:</h3>
+                        <div class="langs-demo-container-inner-box" style="color: var(--black-text-to-white);">
+                            body { <br>
+                                background-color: lightblue; <br>
+                            } <br>
+                            <br>
+                            h1 { <br>
+                                color: white; <br>
+                                text-align: center; <br>
+                            } <br>
+                            <br>
+                            p { <br>
+                                font-family: verdana; <br>
+                            }                                
+                        </div>
+                        <button class="button-1 langs-buttons">Try it Yourself</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="langs" style="background-color: var(--dark-purple-bg-color);"><!---------------- JavaScript part ----------------->
+            <div class="langs-middle-placer">
+                <div class="langs-name">
+                    <h1 style="font-size: 65px;font-weight: 700;height: 80px;color: #ffff;">JavaScript</h1>
+                    <p style="font: 19px;font-weight: 700;height: 29px;color: #ffff;">The language for programming web pages</p>
+                    <button class="button-1 langs-buttons">Learn JavaScript</button>
+                    <button class="button-5 langs-buttons">JavaScript Reference</button>
+                    <button class="button-4 langs-buttons">Get Certified</button>
+                </div>
+                <div class="langs-demo">
+                    <div class="langs-demo-container">
+                        <h3 style="color: var(--black-text-to-white);">JavaScript Example:</h3>
+                        <div class="langs-demo-container-inner-box" style="color: var(--black-text-to-white);">
+                            &lt;button onclick=&quot;myFunction()&quot;&gt;Click Me! <br>
+                            &lt;/button&gt; <br>
+                            <br>
+                            &lt;script&gt; <br>
+                            function myFunction() { <br>
+                            let x = document.getElementById(&quot;demo&quot;); <br>
+                            x.style.fontSize = &quot;25px&quot;; <br>
+                            x.style.color = &quot;red&quot;; <br>
+                            } <br>
+                            &lt;/script&gt;
+                              
+                        </div>
+                        <button class="button-1 langs-buttons">Try it Yourself</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="langs" style="background-color: #f3ecea;"><!---------------- Python part ----------------->
+            <div class="langs-middle-placer">
+                <div class="langs-name">
+                    <h1 style="font-size: 65px;font-weight: 700;height: 80px;">Python</h1>
+                    <p style="font: 19px;font-weight: 700;height: 29px;">A popular programming language</p>
+                    <button class="button-1 langs-buttons">Learn Python</button>
+                    <button class="button-3 langs-buttons">Python Reference</button>
+                    <button class="button-4 langs-buttons">Get Certified</button>
+                </div>
+                <div class="langs-demo">
+                    <div class="langs-demo-container">
+                        <h3 style="color: var(--black-text-to-white);">Python Example:</h3>
+                        <div class="langs-demo-container-inner-box" style="color: var(--black-text-to-white);">
+                            if 5 > 2: <br>
+                            print("Five is greater than two!")                            
+                        </div>
+                        <button class="button-1 langs-buttons">Try it Yourself</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="langs" style="background-color: #96d4d4"><!---------------- SQL part ----------------->
+            <div class="langs-middle-placer">
+                <div class="langs-name">
+                    <h1 style="font-size: 65px;font-weight: 700;height: 80px;">SQL</h1>
+                    <p style="font: 19px;font-weight: 700;height: 29px;">A language for accessing databases</p>
+                    <button class="button-1 langs-buttons">Learn SQL</button>
+                    <button class="button-3 langs-buttons">SQL Reference</button>
+                    <button class="button-4 langs-buttons">Get Certified</button>
+                </div>
+                <div class="langs-demo">
+                    <div class="langs-demo-container">
+                        <h3 style="color: var(--black-text-to-white);">SQL Example:</h3>
+                        <div style="color: var(--black-text-to-white);" class="langs-demo-container-inner-box">
+                            SELECT * FROM Customers <br>
+                            WHERE Country='Mexico';                         
+                        </div>
+                        <button class="button-1 langs-buttons">Try it Yourself</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="extra-langs"><!---------------- extra langs part ----------------->
+            <div class="extra-langs-container">
+                <div class="extra-langs-container-c1" style="background-color: #ffc0c7;"><!--------- php part--------->
+                    <h1 style="font-size: 45px;height: 55px;">PHP</h1>
+                    <p style="font-size: 18px;height: 28px;">A web server programming language</p>
+                    <button class="button-3 langs-buttons">Learn PHPe</button>
+                </div>
+                <div class="extra-langs-container-c1" style="background-color: #fff4a3;"><!--------- jQuery part--------->
+                    <h1 style="font-size: 45px;height: 55px;">jQuery</h1>
+                    <p style="font-size: 18px;height: 28px;">A JS library for developing web pages</p>
+                    <button class="button-3 langs-buttons">Learn jQuery</button>
+                </div>
+                <div class="extra-langs-container-c1" style="background-color: #f3ecea;"><!--------- Java part--------->
+                    <h1 style="font-size: 45px;height: 55px;">Java</h1>
+                    <p style="font-size: 18px;height: 28px;">A programming languagee</p>
+                    <button class="button-3 langs-buttons">Learn Java</button>
+                </div>
+                <div class="extra-langs-container-c1" style="background-color: #d9eee1;"><!--------- C++ part--------->
+                    <h1 style="font-size: 45px;height: 55px;">C++</h1>
+                    <p style="font-size: 18px;height: 28px;">A programming language</p>
+                    <button class="button-3 langs-buttons">Learn C++</button>
+                </div>
+                <div class="extra-langs-container-c1" style="background-color: #96d4d4;"><!--------- W3.CSS part--------->
+                    <h1 style="font-size: 45px;height: 55px;">W3.CSS</h1>
+                    <p style="font-size: 18px;height: 28px;">A CSS framework for faster and better responsive web pages</p>
+                    <button class="button-3 langs-buttons">Learn W3.CSS</button>
+                </div>
+                <div class="extra-langs-container-c1" style="background-color: #e7e9eb;"><!--------- Bootstrap part--------->
+                    <h1 style="font-size: 45px;height: 55px;">PHP</h1>
+                    <p style="font-size: 18px;height: 28px;">A CSS framework for designing better web pages</p>
+                    <button class="button-3 langs-buttons">Learn Bootstrap</button>
+                </div>
+            </div>
+        </div>
+        <div class="grid-more-langs">
+            <div class="grid-more-langs-container">
+                <div class="gB1 large-grid-box-right">C</div>
+                <div class="gB2 large-grid-box-left">C#</div>
+                <div class="gB3 small-grid-box">R</div>
+                <div class="gB4 small-grid-box">Kotlin</div>
+                <div class="gB5 small-grid-box">Node.js</div>
+                <div class="gB6 small-grid-box">React</div>
+                <div class="gB7 small-grid-box">JSON</div>
+                <div class="gB8 small-grid-box">VUE</div>
+                <div class="gB9 small-grid-box">MySql</div>
+                <div class="gB10 small-grid-box">XML</div>
+                <div class="gB11 small-grid-box">Sass</div>
+                <div class="gB12 small-grid-box">Icons</div>
+                <div class="gB13 small-grid-box">RWD</div>
+                <div class="gB14 small-grid-box">Graphics</div>
+                <div class="gB15 small-grid-box">SVG</div>
+                <div class="gB16 small-grid-box">Canvas</div>
+                <div class="gB17 small-grid-box">Rasberry Pi</div>
+                <div class="gB18 small-grid-box">Cyber Security</div>
+                <div class="gB19 small-grid-box">Colors</div>
+                <div class="gB20 small-grid-box">Git</div>
+                <div class="gB21 small-grid-box">Matplotlib</div>
+                <div class="gB22 small-grid-box">NumPy</div>
+                <div class="gB23 small-grid-box">Pandas</div>
+                <div class="gB24 small-grid-box">SciPy</div>
+                <div class="gB25 small-grid-box">ASP</div>
+                <div class="gB26 small-grid-box">AngularJS</div>
+                <div class="gB27 small-grid-box">AppML</div>
+                <div class="gB28 small-grid-box">Go</div>
+                <div class="gB29 small-grid-box">TypeScript</div>
+                <div class="gB30 small-grid-box">Django</div>
+                <div class="gB31 small-grid-box">MongoDB</div>
+                <div class="gB32 small-grid-box">Statistics</div>
+                <div class="gB33 small-grid-box">Data Science</div>
+                <div class="gB34 small-grid-box">PostgreSQL</div>
+                <div class="gB35 small-grid-box">HowTo</div>
+                <div class="gB36 small-grid-box">Code Game</div>
+                <div class="gB37 small-grid-box">Spaces</div>
+                <div class="gB38 small-grid-box">Typing Speed</div>
+                <div class="gB39 large-grid-box-right">Excel</div>
+                <div class="gB40 large-grid-box-left">DSA - Data Structures and Algorithms</div>
+                <div class="gB41 large-grid-box-right">Machine Learning</div>
+                <div class="gB42 large-grid-box-left">Artifical Intelligence</div>
+            </div>
+        </div>
+        <div class="code-editor"><!---------------- code editor part ----------------->
+            <div class="code-editor-container">
+                <h1 style="font-size: 65px;color: #ffff;margin: 0 auto;">Code Editor</h1>
+                <p style="font-size: 20px;color: #ffff;margin: 0 auto;">With our online code editor, you can edit code and view the result in your browser</p>
+                <video autoplay loop muted style="width: 100%; height: auto;border-radius: 5px;">
+                    <source src="resources/code-editor.mp4" type="video/mp4">
+                    <!-- video credit: https://www.w3schools.com/ -->
+                    Your browser does not support the video tag.
+                </video>
+                <button class="button-1 langs-buttons" style="width: 350px;border-radius: 5px;">Try Frontend Editor (HTML/CSS/JS)</button>
+                <button class="button-2 langs-buttons" style="width: 400px;border-radius: 5px;">Try Backend Editor (Python/PHP/Java/C..)</button>                
+            </div>
+        </div>
+        <div class="w3chools-spaces"><!---------------- w3chools-spaces part ----------------->
+            <h1 style="font-size: 65px;color: #ffff;">W3Schools Spaces</h1>
+            <p style="font-size: 20px;color: #ffff;font-weight: 700;">If you want to create your own website, check out <a href="#" onclick="event.preventDefault();" style="color: #ffc0c7;">W3Schools Spaces</a>.</p>
+            <p style="font-size: 20px;color: #ffff;font-weight: 700;">It is free to use, and does not require any setup:</p>
+            <video autoplay loop muted style="width: 900px; height: auto;border-radius: 5px;">
+                <source src="resources/W3Schools-Spaces.mp4" type="video/mp4">
+                <!-- video credit: https://www.w3schools.com/ -->
+                Your browser does not support the video tag.
+            </video>
+            <button class="button-1 langs-buttons" style="width: 300px;height: 55px;">Learn More</button>
+        </div>
+        <div class="my-learning"><!---------------- my learning part ----------------->
+            <div class="my-learning-container">
+                <img src="resources/mylearning.png" alt="my learning image" height="410px" width="420px"><!-- image credit: https://www.w3schools.com/-->
+                <div class="my-learning-container-text">
+                    <h1 style="font-size: 65px;font-weight: 600;">My Learning</h1>
+                    <p style="text-align: center;font-size: 20px;font-weight: 600;line-height: 35px;">Track your progress with <br> our free "My Learning" program.</p>
+                    <p style="font-size: 20px;font-weight: 600;">Log in to your account, and start earning points!</p>
+                    <button class="button-1 langs-buttons" style="width: 300px;height: 55px;">Sign Up for Free</button>
+                </div>
+            </div>
+        </div>
+        <div class="plus-user"><!---------------- plus-user part ----------------->
+            <h1 style="font-size: 52px;color: #ffff;font-weight: 600;">Become a Plus User</h1>
+            <p style="font-size: 25px;font-weight: 600;color: #ffc0c7;">And unlock powerful features:</p>
+            <div class="plus-user-inside-container">
+                <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                    <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                    Browse W3Schools without ads
+                </p>
+                <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                    <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                    Build and host Websites
+                </p>
+                <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                    <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                    Get extra credits
+                </p>
+                <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                    <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                    Priority support
+                </p>
+            </div>
+            <button class="button-1 langs-buttons" style="width: 350px;height: 55px;">Learn More</button>
+        </div>
+        <div class="color-picker">
+            <h1 style="font-size: 65px;font-weight: 700;">Color Picker</h1>
+            <p style="font-size: 20px;font-weight: 700;">W3Schools' famous color picker:</p>
+            <img src="resources/colorpicker.webp" alt="color picker imag"><!-- image credit: https://www.w3schools.com/-->
+        </div>
+        <div class="for-teachers"><!---------------- For Teachers part ----------------->
+            <div class="for-teachers-text-conatiner">
+                <h1 style="font-size: 70px;font-weight: 600;color: #ffff;">For Teachers</h1>
+                <p style="font-size: 19px;font-weight: 600;color: #ffff;">Streamline your teaching:</p>
+                <div class="plus-user-text-conatiner-inside">
+                    <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                        <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                        Manage your classroom
+                    </p>
+                    <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                        <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                        Ready-to-use learning materials
+                    </p>
+                    <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                        <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                        Customize study plans
+                    </p>
+                    <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                        <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                        Track student progress
+                    </p>
+                    <p style="font-size: 20px;font-weight: 700;color: #ffff;">
+                        <img src="resources/tick.svg" alt="tick" style="padding: 0px 10px;">
+                        Interactive coding challenges
+                    </p>
+                </div>
+                <button class="button-1 langs-buttons">Learn More</button>
+            </div>
+            <img src="resources/classroom.webp" alt="for teachers image" height="340px" width="430px"><!-- image credit: https://www.w3schools.com/-->
+        </div>
+        <div class="code-game"><!---------------- code game part ----------------->
+            <h1 style="font-size: 48px;font-weight: 600;font-family: 'Freckle Face', cursive;">Code Game</h1>
+            <p style="font-size: 32px;font-weight: 600;font-family: 'Freckle Face', cursive;">Help the Lynx collect pine cones!</p>
+            <img src="resources/game.webp" alt="code game image" height="200px" width="120px">
+            <button class="button-3 langs-buttons" style="height: 52px;">Play Game</button>
+        </div>
+        <div class="exercise-quiz"><!---------------- exercise and quiz part ----------------->
+            <h1 style="font-size: 65px;font-weight: 600;color: #ffff;">Exercises and Quizzes</h1>
+            <p style="font-size: 20px;font-weight: 600;color: #ffff;">Test your skills!</p>
+            <div class="exercise-quiz-inner-container">
+                <button class="button-1 langs-buttons" style="height: 200px;width: 570px;border-radius: 5px;">Exercises</button>
+                <button class="button-2 langs-buttons" style="height: 200px;width: 570px;border-radius: 5px;">Quizzes</button>
+            </div>
+        </div>
+        <div class="web-templates"><!---------------- web-templates part ----------------->
+            <h1 style="font-size: 65px;font-weight: 600;color: var(--black-text-to-white);">Web Templates</h1>
+            <p style="font-size: 20px;font-weight: 600;color: var(--black-text-to-white);">Browse our selection of free responsive HTML Templates</p>
+            <img src="resources/web-template.webp" alt="web template image" height="375px" width="980px" style="cursor: pointer;">
+            <!-- image credit: https://www.w3schools.com/ -->
+            <button class="button-3 langs-buttons" style="height: 60px;width: 700px;">Browse Templates</button>
+        </div>
+        <div class="career"><!---------------- kick start your career part ----------------->
+            <h1 style="font-size: 62px;font-weight: 600;color: #ffc0c7;">Kickstart your career</h1>
+            <h1 style="font-size: 45px;font-weight: 600;color: #ffc0c7;">Get certified by completing a course</h1>
+            <button class="button-1 langs-buttons" style="height: 65px;width: 205px;border-radius: 50px;">Get Started</button>
+        </div>
+        <div class="how-to"><!---------------- how to part ----------------->
+            <h1 style="font-size: 60px;font-weight: 600;color: var(--black-text-to-white);">How To Section</h1>
+            <p style="font-size: 20px;font-weight: 600;color: var(--black-text-to-white);">Code snippets for HTML, CSS and JavaScript</p>
+            <p style="font-size: 16px;font-weight: 600;color: var(--black-text-to-white);">For example, how to create a slideshow:</p>
+            <div class="monitor-setup">
+                <div class="monitor">
+                    <div class="url-part">
+                        <div class="mac-circles">
+                            <div class="circle" style="background-color: #ed594a;"></div>
+                            <div class="circle" style="background-color: #fdd800;"></div>
+                            <div class="circle" style="background-color: #5ac05a;"></div>
+                        </div>
+                        <div class="actual-url">www.w3schools.com/howto/</div>
+                    </div>
+                    <div class="screen">
+                        <button class="sleft slider">&lt;</button>
+                        <button class="sright slider">&gt;</button>
+                        <div class="screen-img as">
+                            <p class="caption">caption Text</p>
+                            <img src="resources/slide1.jpg" alt="slide 1 image">
+                            <!-- image credit: https://www.w3schools.com/ -->
+                        </div>
+                        <div class="screen-img as">
+                            <p class="caption">caption Two</p>
+                            <img src="resources/slide2.jpg" alt="slide 2 image">
+                            <!-- image credit: https://www.w3schools.com/ -->
+                        </div>
+                        <div class="screen-img as">
+                            <p class="caption">caption Three</p>
+                            <img src="resources/slide3.jpg" alt="slide 3 image">
+                            <!-- image credit: https://www.w3schools.com/ -->
+                        </div>
+                    </div>
+                    <div class="circle-sliders">
+                        <div class="sc"></div>
+                        <div class="sc"></div>
+                        <div class="sc"></div>
+                    </div>
+                </div>
+                <div class="stand"></div>
+                <button class="learn-button">Learn How To</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            Disclaimer: This is a clone website of the <a href="https://www.w3schools.com/" target="_blank" style="color: #ed594a;">W3Schools landing page</a> that I built just for learning and practice. 
+            😄 I had a lot of fun and learned so much while building it! 
+            🚀 It helped me improve my coding skills and understand web design better. 
+            🧑‍💻 This project was created with good intentions—just for educational purposes, not for anything harmful or misleading. 
+            Please refrain from any misuse. 🙏 Thank you for checking it out!
+        </p>
+    </footer>
+    <script src="js/nav.js"></script>
+    <script src="js/macScreen.js"></script>
+</body>
+</html>
